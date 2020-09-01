@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import './Card.css'
+import './Card.css';
+import {Link} from 'react-router-dom';
+
 // Fetch de una MATRIZ(empieza con[])
 
 const Card = ({ images, names, uid }) => {
@@ -11,7 +13,7 @@ const Card = ({ images, names, uid }) => {
                 <div className="card" style={style}>
                     <img src={images}  className="bird card-img-top" alt="birds" />
                     <div className="card-body"> <h5 className="card-title">{names}</h5>
-                        <a href="!#" className="btn btn-primary"> See detail </a>
+                        <button><Link to={`/detail/${uid}`}> See detail</Link> </button>
                     </div>
                 </div>
             </div>
