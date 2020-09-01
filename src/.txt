@@ -1,0 +1,4 @@
+#1 Componente basico con HTML y CCSS de la vista
+#2 Links de direccionamiento
+#3 Test de URL, usando useParams (video en clase) https://reactrouter.com/web/api/Hooks/useparams
+#4 Fetch de la lista renderizar todos los datos, fragmentar en bloques.

@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
+import './Card.css'
+// Fetch de una MATRIZ(empieza con[])
 
-export const Card = () => {
+const Card = ({ images, names, uid }) => {
+
+    let style = { width: "18rem", };
+
     return (
-        <div className='row'>
-            <div className='col-4'>
-            <div className="card"> <img src="..." className="card-img-top" alt="card" /> <div className="card-body"> <h5 className="card-title">Card title</h5> <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> <a href="#" className="btn btn-primary">Go somewhere</a> </div> </div>
+            <div className='d-inline-flex m-3'> 
+                <div className="card" style={style}>
+                    <img src={images}  className="bird card-img-top" alt="birds" />
+                    <div className="card-body"> <h5 className="card-title">{names}</h5>
+                        <a href="!#" className="btn btn-primary"> See detail </a>
+                    </div>
+                </div>
             </div>
-        </div>
-    )
-}
+    );
+};
+
+
+export default Card;
