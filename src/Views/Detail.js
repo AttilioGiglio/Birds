@@ -18,17 +18,17 @@ const Detail = () => {
     return (
         <>
             {state === null ?
-                (<div class="spinner">
-                    <div class="cube1"></div>
-                    <div class="cube2"></div>
+                (<div className="spinner">
+                    <div className="cube1"></div>
+                    <div className="cube2"></div>
                 </div>)
                 :
                 (<div>
-                    <div class="card m-3">
-                        <img src={state.map.image} class="card-img-top" />
-                        <div class="card-body">
-                             <h5 class="card-title">{state.name.spanish}</h5>
-                <p class="card-text">{state.habitat}</p>
+                    <div className="card m-3 cards">
+                        <img src={state.map.image} className="card-img-top images" />
+                        <div className="card-body">
+                             <h5 className="card-title">{state.name.spanish}</h5>
+                <p className="card-text">{state.habitat}</p>
                         </div>
                     </div>
                 </div>)}
@@ -43,10 +43,10 @@ export default Detail;
 <h5 className="card-title">{state.name.spanish}</h5>
 <p className="card-text">{state.iucn.description}.</p>
 </div>
-<div class="jumbotron jumbotron-fluid">
-<div class="container">
-  <h1 class="display-4">{state.name.spanish}</h1>
-  <p class="lead">{state.habitat}</p>
+<div className="jumbotron jumbotron-fluid">
+<div className="container">
+  <h1 className="display-4">{state.name.spanish}</h1>
+  <p className="lead">{state.habitat}</p>
 </div>
 </div>
 */

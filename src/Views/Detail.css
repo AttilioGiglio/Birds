@@ -47,3 +47,11 @@
       -webkit-transform: rotate(-360deg);
     }
   }
+
+  .cards{
+    width:25rem;
+  }
+
+  .images{
+      height:50rem;
+  }
